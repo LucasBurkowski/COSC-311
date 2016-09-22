@@ -1,0 +1,123 @@
+Please select an option: 
+Create File (1) | Display File (2) | Retrieve a Record (3) | Modify a Record (4) | Add a New Record (5) | Delete a Record (6) | Exit (7)
+1
+Enter a name for the Random Access File: 
+students
+
+Please enter the name of the file you wish to load: 
+students.txt
+first name = Jim                 last name = McRugin             	student ID = 3641	GPA = 3.11
+first name = Tony                last name = Samson              	student ID = 2468	GPA = 2.44
+first name = Bill                last name = Shafer              	student ID = 1237	GPA = 2.61
+first name = Sarah               last name = Haggard             	student ID = 1638	GPA = 3.21
+first name = Jerry               last name = Brackston           	student ID = 1537	GPA = 2.95
+What would you like to do: 
+Return to Main Menu (M) | View Next Screen (N) | Display All Students (A)
+
+M
+Please select an option: 
+Create File (1) | Display File (2) | Retrieve a Record (3) | Modify a Record (4) | Add a New Record (5) | Delete a Record (6) | Exit (7)
+2
+first name = Jim                 last name = McRugin             	student ID = 3641	GPA = 3.11
+first name = Tony                last name = Samson              	student ID = 2468	GPA = 2.44
+first name = Bill                last name = Shafer              	student ID = 1237	GPA = 2.61
+first name = Sarah               last name = Haggard             	student ID = 1638	GPA = 3.21
+first name = Jerry               last name = Brackston           	student ID = 1537	GPA = 2.95
+What would you like to do: 
+Return to Main Menu (M) | View Next Screen (N) | Display All Students (A)
+
+N
+first name = Carly               last name = Smith               	student ID = 4960	GPA = 4.0
+first name = Jen                 last name = Roberts             	student ID = 3773	GPA = 3.51
+first name = Kathy               last name = Duncan              	student ID = 9837	GPA = 3.99
+first name = Phil                last name = Franks              	student ID = 8487	GPA = 1.56
+first name = Tracy               last name = Jones               	student ID = 6483	GPA = 3.16
+first name = Tom                 last name = Jackson             	student ID = 5334	GPA = 2.51
+What would you like to do: 
+Return to Main Menu (M) | View Next Screen (N) | Display All Students (A)
+
+A
+first name = Jim                 last name = McRugin             	student ID = 3641	GPA = 3.11
+first name = Tony                last name = Samson              	student ID = 2468	GPA = 2.44
+first name = Bill                last name = Shafer              	student ID = 1237	GPA = 2.61
+first name = Sarah               last name = Haggard             	student ID = 1638	GPA = 3.21
+first name = Jerry               last name = Brackston           	student ID = 1537	GPA = 2.95
+first name = Carly               last name = Smith               	student ID = 4960	GPA = 4.0
+first name = Jen                 last name = Roberts             	student ID = 3773	GPA = 3.51
+first name = Kathy               last name = Duncan              	student ID = 9837	GPA = 3.99
+first name = Phil                last name = Franks              	student ID = 8487	GPA = 1.56
+first name = Tracy               last name = Jones               	student ID = 6483	GPA = 3.16
+first name = Tom                 last name = Jackson             	student ID = 5334	GPA = 2.51
+What would you like to do: 
+Return to Main Menu (M) | View Next Screen (N) | Display All Students (A)
+
+M
+Please select an option: 
+Create File (1) | Display File (2) | Retrieve a Record (3) | Modify a Record (4) | Add a New Record (5) | Delete a Record (6) | Exit (7)
+3
+Enter a record number to retrieve it.
+5
+first name = Jerry               last name = Brackston           	student ID = 1537	GPA = 2.95
+Please select an option: 
+Create File (1) | Display File (2) | Retrieve a Record (3) | Modify a Record (4) | Add a New Record (5) | Delete a Record (6) | Exit (7)
+4
+Enter a record number to modify it.
+7
+Enter the first name for the record:
+lucas
+Enter the last name for the record:
+burkowski
+Enter the ID for the record:
+8487
+Enter the GPA for the record:
+3.5
+first name = lucas               last name = burkowski           	student ID = 8487	GPA = 3.5
+Please select an option: 
+Create File (1) | Display File (2) | Retrieve a Record (3) | Modify a Record (4) | Add a New Record (5) | Delete a Record (6) | Exit (7)
+5
+Enter the first name for the record:
+Sam
+Enter the last name for the record:
+Gorski
+Enter the ID for the record:
+5555
+Enter the GPA for the record:
+2.21
+first name = Sam                 last name = Gorski              	student ID = 5555	GPA = 2.21
+Please select an option: 
+Create File (1) | Display File (2) | Retrieve a Record (3) | Modify a Record (4) | Add a New Record (5) | Delete a Record (6) | Exit (7)
+6
+Enter a record number to delete it.
+2
+first name = DELETED             last name = DELETED             	student ID = 0	GPA = 0.0
+Please select an option: 
+Create File (1) | Display File (2) | Retrieve a Record (3) | Modify a Record (4) | Add a New Record (5) | Delete a Record (6) | Exit (7)
+2
+first name = Jim                 last name = McRugin             	student ID = 3641	GPA = 3.11
+first name = DELETED             last name = DELETED             	student ID = 0	GPA = 0.0
+first name = Bill                last name = Shafer              	student ID = 1237	GPA = 2.61
+first name = Sarah               last name = Haggard             	student ID = 1638	GPA = 3.21
+first name = Jerry               last name = Brackston           	student ID = 1537	GPA = 2.95
+What would you like to do: 
+Return to Main Menu (M) | View Next Screen (N) | Display All Students (A)
+
+A
+first name = Jim                 last name = McRugin             	student ID = 3641	GPA = 3.11
+first name = DELETED             last name = DELETED             	student ID = 0	GPA = 0.0
+first name = Bill                last name = Shafer              	student ID = 1237	GPA = 2.61
+first name = Sarah               last name = Haggard             	student ID = 1638	GPA = 3.21
+first name = Jerry               last name = Brackston           	student ID = 1537	GPA = 2.95
+first name = Carly               last name = Smith               	student ID = 4960	GPA = 4.0
+first name = lucas               last name = burkowski           	student ID = 8487	GPA = 3.5
+first name = Kathy               last name = Duncan              	student ID = 9837	GPA = 3.99
+first name = Phil                last name = Franks              	student ID = 8487	GPA = 1.56
+first name = Tracy               last name = Jones               	student ID = 6483	GPA = 3.16
+first name = Tom                 last name = Jackson             	student ID = 5334	GPA = 2.51
+first name = Sam                 last name = Gorski              	student ID = 5555	GPA = 2.21
+What would you like to do: 
+Return to Main Menu (M) | View Next Screen (N) | Display All Students (A)
+
+M
+Please select an option: 
+Create File (1) | Display File (2) | Retrieve a Record (3) | Modify a Record (4) | Add a New Record (5) | Delete a Record (6) | Exit (7)
+7

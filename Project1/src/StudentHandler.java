@@ -42,7 +42,7 @@ public class StudentHandler {
 		String firstname;
 		String lastname;
 		int ID;
-		int GPA;
+		double GPA;
 		System.out.println("Enter the first name for the record:");
 		firstname = input.nextLine();
 		System.out.println("Enter the last name for the record:");
@@ -50,7 +50,7 @@ public class StudentHandler {
 		System.out.println("Enter the ID for the record:");
 		ID = input.nextInt();
 		System.out.println("Enter the GPA for the record:");
-		GPA = input.nextInt();
+		GPA = input.nextDouble();
 		
 		firstname = Student.pad(firstname, 20);
 		lastname = Student.pad(lastname, 20);
@@ -74,7 +74,7 @@ public class StudentHandler {
 		String firstname;
 		String lastname;
 		int ID;
-		int GPA;
+		double GPA;
 		System.out.println("Enter the first name for the record:");
 		firstname = input.nextLine();
 		System.out.println("Enter the last name for the record:");
@@ -82,7 +82,7 @@ public class StudentHandler {
 		System.out.println("Enter the ID for the record:");
 		ID = input.nextInt();
 		System.out.println("Enter the GPA for the record:");
-		GPA = input.nextInt();
+		GPA = input.nextDouble();
 		
 		firstname = Student.pad(firstname, 20);
 		lastname = Student.pad(lastname, 20);
