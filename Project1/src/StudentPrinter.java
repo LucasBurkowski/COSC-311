@@ -3,6 +3,12 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 
 public class StudentPrinter {
+	
+	/**
+	 * modify a record in the list of students 
+	 * @param students RandomAccessFile to use
+	 * @param rec student to print
+	 */
 	public static void printAllStudents(RandomAccessFile students, Student rec) throws IOException{
 		try{
 			students.seek(0);
@@ -64,6 +70,12 @@ public class StudentPrinter {
 		}
 	}
 	
+	/**
+	 * modify a record in the list of students 
+	 * @param students RandomAccessFile to use
+	 * @param rec student to print
+	 * @param pos the position of the record to print
+	 */
 	public static void printRecord(RandomAccessFile students, Student rec, int pos) throws IOException{
 		try{
 			students.seek(pos * Student.SIZE);

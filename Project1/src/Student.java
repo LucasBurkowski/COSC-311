@@ -1,3 +1,8 @@
+/*
+ * This class is nearly identical to that found in lab1311
+ * Slight modifications where made to make some variables
+ * public for use in other classes.
+ */
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.Scanner;
@@ -8,7 +13,7 @@ public class Student {
 	private String lastName;
 	private int ID;
 	private double GPA;
-	public static int SIZE = 92;
+	public static int SIZE = 92; //made public so other classes can use
 	
 	public void set(String first, String last, int id, double gpa){
 		firstName = first;

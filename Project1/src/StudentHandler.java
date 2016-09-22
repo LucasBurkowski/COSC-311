@@ -14,6 +14,12 @@ import java.util.Scanner;
 
 public class StudentHandler {
 	
+	/**
+	 * modify a record in the list of students 
+	 * @param students RandomAccessFile to use
+	 * @param rec student to delete
+	 * @param pos the position of the record to edit
+	 */
 	public static void deleteRecord(RandomAccessFile students, Student rec, int pos) throws IOException{
 		try{
 			String delete = "DELETED";
@@ -33,9 +39,9 @@ public class StudentHandler {
 	
 	/**
 	 * modify a record in the list of students 
-	 * @param students 
-	 * @param size the length of the resulting string
-	 * @return a string of length size
+	 * @param students RandomAccessFile to use
+	 * @param rec student to modify
+	 * @param pos the position of the record to edit
 	 */
 	public static void modifyRecord(RandomAccessFile students, Student rec, int pos) throws IOException{
 		Scanner input = new Scanner(System.in);
@@ -69,6 +75,11 @@ public class StudentHandler {
 		input.close();
 	}
 	
+	/**
+	 * modify a record in the list of students 
+	 * @param students RandomAccessFile to use
+	 * @param rec student to create
+	 */
 	public static void newRecord(RandomAccessFile students, Student rec) throws IOException{
 		Scanner input = new Scanner(System.in);
 		String firstname;
