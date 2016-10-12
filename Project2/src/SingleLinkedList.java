@@ -207,17 +207,16 @@ public class SingleLinkedList<E extends Comparable> {
      */
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder("[");
+        StringBuilder sb = new StringBuilder();
         Node p = head;
         if (p != null) {
             while (p.next != null) {
                 sb.append(p.data.toString());
-                sb.append(" ==> ");
+                sb.append("\n");
                 p = p.next;
             }
             sb.append(p.data.toString());
         }
-        sb.append("]");
         return sb.toString();
     }
     

@@ -1,19 +1,24 @@
 
 public class StudentPair implements Comparable<StudentPair>{
-	private static int ADDRESS;
-	private static int KEY;
+	private int ADDRESS;
+	private int KEY;
+	
+	public StudentPair(int Key, int Address){
+		this.ADDRESS = Address;
+		this.KEY = Key;
+	}
 	
 	public void set(int Key, int Address){
-		ADDRESS = Address;
-		KEY = Key;
+		this.ADDRESS = Address;
+		this.KEY = Key;
 	}
 	
 	public int getAddress(){
-		return ADDRESS;
+		return this.ADDRESS;
 	}
 	
 	public int getKey(){
-		return KEY;
+		return this.KEY;
 	}
 	
 	public boolean equals(StudentPair Comparison){
@@ -34,7 +39,7 @@ public class StudentPair implements Comparable<StudentPair>{
 	
 	@Override
 	public String toString(){
-		return this.getClass().+ "Student Address: " + ADDRESS + " Student Key: " + KEY;
+		return "Student Address: " + this.ADDRESS + " Student Key: " + this.KEY;
 	}
 	
 	@Override

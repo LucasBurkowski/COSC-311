@@ -22,11 +22,11 @@ public class Menu {
 						   "Display File (2) | "+
 						   "Build Index (3) | "+
 						   "Display Index (4) |"+
-						   "Retrieve a Record (4) | "+
-						   "Modify a Record (5) | "+ 
-						   "Add a New Record (6) | "+
-						   "Delete a Record (7) | "+
-						   "Exit (8)");
+						   "Retrieve a Record (5) | "+
+						   "Modify a Record (6) | "+ 
+						   "Add a New Record (7) | "+
+						   "Delete a Record (8) | "+
+						   "Exit (9)");
 		mainMenu();
 	}
 	
@@ -50,7 +50,7 @@ public class Menu {
 					  break;
 			case "6": Main.modifyRecord();
 					  break;
-			case "7": StudentHandler.newRecord(Main.students, Main.studentList);
+			case "7": Main.newRecord();
 					  break;
 			case "8": Main.deleteStudent();
 					  break;

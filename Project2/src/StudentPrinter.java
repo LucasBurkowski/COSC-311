@@ -16,7 +16,7 @@ public class StudentPrinter {
 		
 		try{
 			while(true){
-				rec.readFromFile(students);
+				Student.readFromFile(students);
 				System.out.println(rec);
 			}	
 		}
@@ -70,32 +70,36 @@ public class StudentPrinter {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Do you want to print the full list (1), or the list from an index (2)");
 		int user = input.nextInt();
-		if (user == 1){
-			System.out.println(studentLinked.toString());
-		}
-		if (user == 2){
-			System.out.println("Enter the index number to start from: ");
-			user = input.nextInt();
-			printFromIndex(studentLinked, user);
-		}
-		else{
-			System.out.println("Enter either 1 or 2:");
-			printRecord(studentLinked);
+		switch (user){
+			case 1: System.out.println(studentLinked.toString());;
+					break;
+			case 2: printFromIndex(studentLinked);
+					break;
+			default: System.out.println();
+					System.out.println("Please enter a valid selection! ");
+					printRecord(studentLinked);
+					break;
 		}
 		Menu.displayMenu();
 	}
 	
-	public static void printFromIndex(SingleLinkedList<StudentPair> studentLinked, int user){
+	private static void printFromIndex(SingleLinkedList<StudentPair> studentLinked){
+    	Scanner input = new Scanner(System.in);
+    	int sumFound = 0;
     	
-    	for(int i = 0; i < studentLinked.size(); i++){
-			StudentPair Current = studentLinked.get(i);
-    		if (user == Current.getKey()){
-    			for(int j = 0; j < studentLinked.size() - i; j++){
-    				Current = studentLinked.get(j);
-    				System.out.println(Current.toString());
-    				//System.out.println(studentLinked.get(i).getAddress() + " " + studentLinked.get(i).getKey());
-    			}
+		System.out.println("Enter the starting ID of the index to display: ");
+		int user = input.nextInt();
+		StudentPair Current = StudentHandler.searchIndex(studentLinked, user);
+    	if (Current != null){
+    		System.out.println(Current);
+    		for(int j = Current.getAddress(); j < studentLinked.size(); j++){
+    			Current = studentLinked.get(j);
+    			System.out.println(Current.toString());
+    			sumFound++;
     		}
+    	}
+    	else{
+    		System.out.println("The ID you entered was not found.");
     	}
     }
 

@@ -14,6 +14,7 @@ public class Main {
 	public static RandomAccessFile students; 
 	public static Student studentList;
 	public static SingleLinkedList<StudentPair> studentIndex;
+	public static int  Address;
 	
 	public static void main(String[] args) throws IOException{
 		Menu.displayMenu();
@@ -49,8 +50,7 @@ public class Main {
 	}
 	
 	public static void createIndex() throws IOException{
-		int Address = 1;
-		
+		Address = 0;
 		studentIndex = new SingleLinkedList<StudentPair>();
 		//Scanner input = new Scanner(System.in);
 		//StudentIndex studentsIndex = new StudentIndex();
@@ -60,17 +60,15 @@ public class Main {
 		try{
 			students.seek(0);
 			while(true){
-				StudentPair Current = new StudentPair();
+				StudentPair Current;
 				Student.readFromFile(students); //read the info on the text file
-				Current.set(Student.getID(), Address);	
+				Current = new StudentPair(Student.getID(), Address);	
 				studentIndex.add(Current);
 				Address++;
 			}
 			
 		}
-		
 		catch(EOFException e){//if text file doesn't exist, ask for new input
-			int i = 1;
 			System.out.println("Index Created!");
 			Menu.displayMenu();
 		} 
@@ -87,9 +85,18 @@ public class Main {
 		}
 		else{//set the position of the RandomAccessFile to the record number * the byte length of the record
 			int pos = input.nextInt();//subtract one because records start 1 and not 0
-			
-			//StudentPrinter.printRecord(students, studentList, pos);//print the info in the desired record
+			StudentPair Current = StudentHandler.searchIndex(studentIndex, pos);
+			try{
+				students.seek(Current.getAddress() * Student.SIZE);
+				Student.readFromFile(students);
+				System.out.println(studentList);
+			}
+			catch(NullPointerException e){
+				System.out.println("The current record doesn't exist, please check your input and try again!");
+				Main.retrieveRecord();
+			}
 		}
+		Menu.displayMenu();
 		input.close();
 	}
 	
@@ -109,10 +116,47 @@ public class Main {
 		input.close();
 	}
 	
+	public static void newRecord() throws IOException{
+		Scanner input = new Scanner(System.in);
+		StudentPair newStudent;
+		String firstname;
+		String lastname;
+		int ID;
+		double GPA;
+		System.out.println("Enter the first name for the record:");
+		firstname = input.nextLine();
+		System.out.println("Enter the last name for the record:");
+		lastname = input.nextLine();
+		System.out.println("Enter the ID for the record:");
+		ID = input.nextInt();
+		System.out.println("Enter the GPA for the record:");
+		GPA = input.nextDouble();
+		
+		firstname = Student.pad(firstname, 20);
+		lastname = Student.pad(lastname, 20);
+		try{
+			students.seek(students.length());
+			studentList.set(firstname, lastname, ID, GPA);
+			studentList.writeToFile(students);
+			System.out.println(studentList);
+		}
+		catch(NullPointerException e){
+			System.out.println("The current record doesn't exist, please check your input and try again!");
+			Main.deleteStudent();
+		}
+		Student.readFromFile(students);
+		newStudent = new StudentPair(Student.getID(), Address);
+		studentIndex.add(newStudent);
+		
+		Menu.displayMenu();
+		input.close();
+	}	
+	
 	//this method is used when the user wants to delete a record
 	public static void deleteStudent() throws IOException{
-		System.out.println("Enter a record number to delete it.");
-		Scanner input = new Scanner(System.in);//get record number from user
+		StudentPair removeStudent;
+		System.out.println("Enter a student ID number to delete it.");
+		Scanner input = new Scanner(System.in);//get ID number from user
 		
 		if (!input.hasNextInt()) {//make sure we are getting an integer from the user
 			System.out.println("Please Enter a vaild number!");
@@ -120,7 +164,27 @@ public class Main {
 		}
 		else{
 			int pos = input.nextInt() - 1;//subtract one because records start 1 and not 0
-			StudentHandler.deleteRecord(students, studentList, pos);
+			removeStudent = StudentHandler.searchIndex(studentIndex, pos);
+			if (removeStudent != null){
+				try{
+					String delete = "DELETED";
+					delete = Student.pad(delete, 20);
+					students.seek(removeStudent.getAddress() * Student.SIZE);
+					studentList = new Student();
+					studentList.set(delete, delete, 0, 0);
+					studentList.writeToFile(students);
+					studentIndex.remove(Address);
+					System.out.println(removeStudent.getAddress());
+				}
+				catch(NullPointerException e){
+					System.out.println("The current record doesn't exist, please check your input and try again!");
+					Main.deleteStudent();
+				}
+			}
+			else{
+				System.out.println("No student was found with that ID.");
+			}
+			Menu.displayMenu();
 		}
 		input.close();
 	}
