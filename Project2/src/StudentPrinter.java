@@ -1,7 +1,6 @@
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class StudentPrinter {
@@ -36,7 +35,7 @@ public class StudentPrinter {
 		
 		try{
 			for (int i = 0; i < 5; i++){
-				rec.readFromFile(students);
+				Student.readFromFile(students);
 				System.out.println(rec);
 			}	
 			Menu.listMenu();
@@ -47,6 +46,7 @@ public class StudentPrinter {
 	}
 	
 	public static void printSecondList(RandomAccessFile students, Student rec) throws IOException{
+		Main.checkRandom();
 		try{
 			students.seek(5 * Student.SIZE); //We want to display the list of students past the first 5.
 		}
@@ -57,7 +57,7 @@ public class StudentPrinter {
 		
 		try{
 			while (true){
-				rec.readFromFile(students);
+				Student.readFromFile(students);
 				System.out.println(rec);
 			}	
 		}
@@ -67,6 +67,8 @@ public class StudentPrinter {
 	}
 	
 	public static void printRecord(SingleLinkedList<StudentPair> studentLinked) throws IOException{
+		Main.checkRandom();
+		Main.checkIndex();
 		Scanner input = new Scanner(System.in);
 		System.out.println("Do you want to print the full list (1), or the list from an index (2)");
 		int user = input.nextInt();
@@ -81,15 +83,17 @@ public class StudentPrinter {
 					break;
 		}
 		Menu.displayMenu();
+		input.close();
 	}
 	
 	private static void printFromIndex(SingleLinkedList<StudentPair> studentLinked){
     	Scanner input = new Scanner(System.in);
-    	int sumFound = 0;
+    	@SuppressWarnings("unused")
+		int sumFound = 0;
     	
 		System.out.println("Enter the starting ID of the index to display: ");
 		int user = input.nextInt();
-		StudentPair Current = StudentHandler.searchIndex(studentLinked, user);
+		StudentPair Current = Main.searchIndex(studentLinked, user);
     	if (Current != null){
     		System.out.println(Current);
     		for(int j = Current.getAddress(); j < studentLinked.size(); j++){
@@ -101,6 +105,7 @@ public class StudentPrinter {
     	else{
     		System.out.println("The ID you entered was not found.");
     	}
+    	input.close();
     }
 
 }

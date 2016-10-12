@@ -36,25 +36,26 @@ public class Menu {
 	 */
 	public static void mainMenu() throws IOException{
 		Scanner input = new Scanner(System.in);
-		String Selection = input.nextLine();
+		int Selection = input.nextInt();
 		switch (Selection){
-			case "1": Main.createFile();
+			case 1: Main.createFile();
 					  break;
-			case "2": StudentPrinter.printShortList(Main.students, Main.studentList);
+			case 2: StudentPrinter.printShortList(Main.students, Main.studentList);
 					  break;
-			case "3": Main.createIndex();
+			case 3: Main.createIndex();
 					  break;
-			case "4": StudentPrinter.printRecord(Main.studentIndex);
+			case 4: StudentPrinter.printRecord(Main.studentIndex);
 					  break;
-			case "5": Main.retrieveRecord();
+			case 5: Main.retrieveRecord();
 					  break;
-			case "6": Main.modifyRecord();
+			case 6: Main.modifyRecord();
 					  break;
-			case "7": Main.newRecord();
+			case 7: Main.newRecord();
 					  break;
-			case "8": Main.deleteStudent();
+			case 8: Main.deleteStudent();
 					  break;
-			case "9": System.exit(0);
+			case 9: input.close();
+					  System.exit(0);
 			          break;
 			default: System.out.println();
 					 System.out.println("Please enter a valid selection! ");
