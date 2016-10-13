@@ -4,6 +4,12 @@ import java.io.RandomAccessFile;
 import java.util.Scanner;
 
 public class StudentPrinter {
+	
+	/**
+     * Print the full list SingleLinkedlist<StudentPair> of StudentPairs 
+     * @param students - RandomAccessFile of Student objects
+     * @param rec - Student Object
+     */
 	public static void printAllStudents(RandomAccessFile students, Student rec) throws IOException{
 		try{
 			students.seek(0);
@@ -24,6 +30,11 @@ public class StudentPrinter {
 		}
 	}
 	
+	/**
+     * Print the short list SingleLinkedlist<StudentPair> of StudentPairs 
+     * @param students - RandomAccessFile of Student objects
+     * @param rec - Student Object
+     */
 	public static void printShortList(RandomAccessFile students, Student rec) throws IOException{
 		try{
 			students.seek(0);
@@ -45,6 +56,11 @@ public class StudentPrinter {
 		}
 	}
 	
+	/**
+     * Print the second list of Students in the RandomAccessFile
+     * @param students - RandomAccessFile of Student objects
+     * @param rec - Student Object
+     */
 	public static void printSecondList(RandomAccessFile students, Student rec) throws IOException{
 		Main.checkRandom();
 		try{
@@ -66,6 +82,10 @@ public class StudentPrinter {
 		}
 	}
 	
+	/**
+     * Print the SingleLinkedlist<StudentPair> of StudentPairs 
+     * @param studentLinked - The SingleLinkedList<StudentPair> to print
+     */
 	public static void printRecord(SingleLinkedList<StudentPair> studentLinked) throws IOException{
 		Main.checkRandom();
 		Main.checkIndex();
@@ -86,8 +106,13 @@ public class StudentPrinter {
 		input.close();
 	}
 	
+	/**
+     * Print the StudentPair at a given index
+     * @param studentLinked - The SingleLinkedList<StudentPair> to search for the index
+     */
 	private static void printFromIndex(SingleLinkedList<StudentPair> studentLinked){
-    	Scanner input = new Scanner(System.in);
+    	@SuppressWarnings("resource")
+		Scanner input = new Scanner(System.in);
     	@SuppressWarnings("unused")
 		int sumFound = 0;
     	
@@ -96,7 +121,7 @@ public class StudentPrinter {
 		StudentPair Current = Main.searchIndex(studentLinked, user);
     	if (Current != null){
     		System.out.println(Current);
-    		for(int j = Current.getAddress(); j < studentLinked.size(); j++){
+    		for(int j = Current.getAddress() + 1; j < studentLinked.size(); j++){
     			Current = studentLinked.get(j);
     			System.out.println(Current.toString());
     			sumFound++;
@@ -105,7 +130,6 @@ public class StudentPrinter {
     	else{
     		System.out.println("The ID you entered was not found.");
     	}
-    	input.close();
     }
 
 }

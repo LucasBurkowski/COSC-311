@@ -2,8 +2,8 @@
  * Lucas Burkowski 9/21/2016
  * 
  *  Main Class: This class handles the initial run command for the program.
- *  It contains the following classes: createFile(), retrieveRecord(),
- *  modifyRecord(), and deleteRecord(). These methods correspond with the 
+ *  It contains the following classes: createFile(), createIndex(), retrieveRecord(),
+ *  mewRecord(), modifyRecord(), and deleteRecord(). These methods correspond with the 
  *  main menu options available when the program is run. 
  */
 import java.util.*;
@@ -20,10 +20,14 @@ public class Main {
 		Menu.displayMenu();
 	}
 	
+	/*
+	 *createFile() is used when the user wants to create a database.
+	 *It reads a text file containing a list of student info. It reads
+	 *each line of the file adding it to a random access file the user 
+	 *specifies.
+	 */
 	public static void createFile() throws IOException{
-		
 		Scanner input = new Scanner(System.in);
-		
 		System.out.println("Enter a name for the Random Access File: ");
 		String raFile = input.nextLine(); //setting user keyboard input to the name for the RandomAccessFile
 		students = new RandomAccessFile(raFile,"rw"); //initialization of the students RandomAccessFile
@@ -49,6 +53,11 @@ public class Main {
 		input.close();
 	}
 	
+	/*
+	 *createIndex() is used when the user wants to create an index.
+	 *It reads the database and for each entry creates a new node and
+	 *a StudentPair that contains an ID value and an Address value.
+	 */
 	public static void createIndex() throws IOException{
 		Address = 0;
 		studentIndex = new SingleLinkedList<StudentPair>();
@@ -74,6 +83,11 @@ public class Main {
 		input.close();
 	}
 	
+	/*
+	 *retrieveRecord() is used when the user wants to get a record.
+	 *It first searches a linkedlist for a node with a specific StudentPair,
+	 *then prints the database entry that corresponds with it.
+	 */
 	public static void retrieveRecord() throws IOException{
 		checkRandom();
 		checkIndex();
@@ -101,6 +115,11 @@ public class Main {
 		input.close();
 	}
 		
+	/*
+	 *deleteStudent() is used when the user wants to delete a record.
+	 *It first searches a linkedlist for a node with a specific StudentPair,
+	 *then deletes the database entry that corresponds with it.
+	 */
 	public static void newRecord() throws IOException{
 		checkRandom();
 		checkIndex();
@@ -136,9 +155,13 @@ public class Main {
 		
 		Menu.displayMenu();
 		input.close();
-	}	
+	}
 	
-	//this method is used when the user wants to delete a record
+	/*
+	 *deleteStudent() is used when the user wants to delete a record.
+	 *It first searches a linkedlist for a node with a specific StudentPair,
+	 *then deletes the database entry that corresponds with it.
+	 */
 	public static void deleteStudent() throws IOException{
 		checkRandom();
 		checkIndex();
@@ -230,6 +253,16 @@ public class Main {
 		input.close();
 	}
 	
+	/*
+	 * searchIndex is and iterator for searching a SingleLinkedList of 
+	 * StudentPairs in order to find a specific index in the linkedlist.
+	 */
+	/**
+     * Search a SingleLinkedList for StudentPair at the given index.
+     * @param studentLinked - The linkedlist to be searched
+     * @param index - The desired index to return
+     * @return StudentPair if found at index; null if nothing at index
+     */
 	public static StudentPair searchIndex(SingleLinkedList<StudentPair> studentLinked, int index){
 		for(int i = 0; i < studentLinked.size(); i++){
 			StudentPair Current = studentLinked.get(i);
@@ -240,6 +273,10 @@ public class Main {
     	return null;
 	}
 	
+	/*
+	 * checkRandom() is used to make sure we have created a random access file
+	 * before we run methods that require it.
+	 */
 	public static void checkRandom() throws IOException{
 		if (students == null){
 			System.out.println("You must create a file before you run this command.");
@@ -247,6 +284,10 @@ public class Main {
 		}
 	}
 	
+	/*
+	 * checkIndex() is used to make sure we have created a SingleLinkedList<StudentPair>
+	 * before we run methods that require it.
+	 */
 	public static void checkIndex() throws IOException{
 		if(studentIndex == null){
 			System.out.println("You must create an index before you run this command.");
