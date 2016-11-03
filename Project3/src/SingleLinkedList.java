@@ -10,12 +10,12 @@ public class SingleLinkedList<E extends Comparable> {
 
     // Nested Class
     /** A Node is the building block for the SingleLinkedList */
-    private static class Node<E> {
+    protected static class Node<E> {
 
         /** The data value. */
-        private E data;
+        protected E data;
         /** The link */
-        private Node<E> next = null;
+        protected Node<E> next = null;
 
         /**
          * Construct a node with the given data value and link
@@ -38,15 +38,15 @@ public class SingleLinkedList<E extends Comparable> {
  
     // Data fields
     /** A reference to the head of the list */
-    private Node<E> head = null;
+    protected Node<E> head = null;
     /** The size of the list */
-    private int size = 0;
+    protected int size = 0;
 
     // Helper Methods
     /** Insert an item as the first item of the list.
      *	@param item The item to be inserted
      */
-    private void addFirst(E item) {
+    protected void addFirst(E item) {
         head = new Node<E>(item, head);
         size++;
     }
@@ -56,7 +56,7 @@ public class SingleLinkedList<E extends Comparable> {
      * @param node The node which the new item is inserted after
      * @param item The item to insert
      */
-    private void addAfter(Node<E> node, E item) {
+    protected void addAfter(Node<E> node, E item) {
         node.next = new Node<E>(item, node.next);
         size++;
     }
@@ -65,7 +65,7 @@ public class SingleLinkedList<E extends Comparable> {
      * Remove the first node from the list
      * @returns The removed node's data or null if the list is empty
      */
-    private E removeFirst() {
+    protected E removeFirst() {
         Node<E> temp = head;
         if (head != null) {
             head = head.next;
@@ -84,7 +84,7 @@ public class SingleLinkedList<E extends Comparable> {
      * @returns The data from the removed node, or null
      *          if there is no node to remove
      */
-    private E removeAfter(Node<E> node) {
+    protected E removeAfter(Node<E> node) {
         Node<E> temp = node.next;
         if (temp != null) {
             node.next = temp.next;
@@ -100,7 +100,7 @@ public class SingleLinkedList<E extends Comparable> {
      * @param index The index of the node sought
      * @returns The node at index or null if it does not exist
      */
-    private Node<E> getNode(int index) {
+    protected Node<E> getNode(int index) {
         Node<E> node = head;
         for (int i = 0; i < index && node != null; i++) {
             node = node.next;

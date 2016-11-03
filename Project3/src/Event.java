@@ -32,6 +32,10 @@ public class Event implements Comparable {
 		return duration;
 	}
 	
+	public void setConnectionTime(double time){
+		duration = time - this.time;
+	}
+	
 	public void setTime(double time){
 		this.time = time;
 	}

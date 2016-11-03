@@ -1,7 +1,8 @@
 
 public class RegularQ<E> {
 	private int num = 10;
-	private int front, rear, count;
+	private int front, rear;
+	private int count = 0;
 	private E[] Queue;
 	
 	public RegularQ(){
@@ -16,6 +17,14 @@ public class RegularQ<E> {
 		Queue[rear] = insert;
 		rear = (rear++) % Queue.length;
 		count++;
+	}
+	
+	public E Next(){
+		E next = Queue[front];
+		Queue[front] = null;
+		front = (front++) % Queue.length;
+		count--;
+		return next;
 	}
 	
 	public boolean isEmpty(){
@@ -38,6 +47,4 @@ public class RegularQ<E> {
 		rear = count;
 		Queue = expand;
 	}
-	
-
 }
