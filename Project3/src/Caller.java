@@ -4,11 +4,23 @@ public class Caller {
 	private double hangUp;
 	private double duration;
 	
+	public Caller(){
+		dialIn = 0;
+	}
+	
 	public Caller(double time){
 		dialIn = time;
 	}
 	
 	public void Call(double time){
+		hangUp = time;
+	}
+	
+	public void setDial(double time){
+		dialIn = time;
+	}
+	
+	public void setHang(double time){
 		hangUp = time;
 	}
 	

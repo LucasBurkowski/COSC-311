@@ -4,8 +4,8 @@ public class Event implements Comparable {
 	private int type;
 	private double duration;
 	
-	private static int DIAL_IN = 1;
-	private static int HANG_UP = 0;
+	public static int DIAL_IN = 1;
+	public static int HANG_UP = 0;
 	
 	
 	public Event(double time, int type){

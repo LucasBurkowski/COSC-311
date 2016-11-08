@@ -1,6 +1,6 @@
 
 public class RegularQ<E> {
-	private int num = 10;
+	private int num = 100;
 	private int front, rear;
 	private int count = 0;
 	private E[] Queue;
@@ -25,6 +25,16 @@ public class RegularQ<E> {
 		front = (front++) % Queue.length;
 		count--;
 		return next;
+	}
+	
+	public E getFront(){
+		E next = Queue[front];
+		return next;
+	}
+	
+	public E getRear(){
+		E last = Queue[rear];
+		return last;
 	}
 	
 	public boolean isEmpty(){

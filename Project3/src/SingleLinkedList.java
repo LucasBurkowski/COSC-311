@@ -244,6 +244,6 @@ public class SingleLinkedList<E extends Comparable> {
         }
         return false;
     }
-    
+
 }
 
