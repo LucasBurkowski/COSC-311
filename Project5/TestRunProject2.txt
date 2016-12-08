@@ -1,0 +1,145 @@
+Please select an option: 
+Create File (1) | Display File (2) | Build Index (3) | Display Index (4) |Retrieve a Record (5) | Modify a Record (6) | Add a New Record (7) | Delete a Record (8) | Exit (9)
+1
+Enter a name for the Random Access File: 
+students
+
+Please enter the name of the file you wish to load: 
+students.txt
+first name = Jim                 last name = McRugin             	student ID = 3641	GPA = 3.11
+first name = Tony                last name = Samson              	student ID = 2468	GPA = 2.44
+first name = Bill                last name = Shafer              	student ID = 1237	GPA = 2.61
+first name = Sarah               last name = Haggard             	student ID = 1638	GPA = 3.21
+first name = Jerry               last name = Brackston           	student ID = 1537	GPA = 2.95
+What would you like to do: 
+Return to Main Menu (M) | View Next Screen (N) | Display All Students (A)
+
+M
+Please select an option: 
+Create File (1) | Display File (2) | Build Index (3) | Display Index (4) |Retrieve a Record (5) | Modify a Record (6) | Add a New Record (7) | Delete a Record (8) | Exit (9)
+3
+Enter a name for the Random Access File: 
+students
+Index Created!
+Please select an option: 
+Create File (1) | Display File (2) | Build Index (3) | Display Index (4) |Retrieve a Record (5) | Modify a Record (6) | Add a New Record (7) | Delete a Record (8) | Exit (9)
+4
+Do you want to print the full list (1), or the list from an index (2)
+1
+Student Address: 0 Student Key: 3641
+Student Address: 1 Student Key: 2468
+Student Address: 2 Student Key: 1237
+Student Address: 3 Student Key: 1638
+Student Address: 4 Student Key: 1537
+Student Address: 5 Student Key: 4960
+Student Address: 6 Student Key: 3773
+Student Address: 7 Student Key: 9837
+Student Address: 8 Student Key: 8487
+Student Address: 9 Student Key: 6483
+Student Address: 10 Student Key: 5334
+Please select an option: 
+Create File (1) | Display File (2) | Build Index (3) | Display Index (4) |Retrieve a Record (5) | Modify a Record (6) | Add a New Record (7) | Delete a Record (8) | Exit (9)
+4
+Do you want to print the full list (1), or the list from an index (2)
+2
+Enter the starting ID of the index to display: 
+3773
+Student Address: 6 Student Key: 3773
+Student Address: 7 Student Key: 9837
+Student Address: 8 Student Key: 8487
+Student Address: 9 Student Key: 6483
+Student Address: 10 Student Key: 5334
+Please select an option: 
+Create File (1) | Display File (2) | Build Index (3) | Display Index (4) |Retrieve a Record (5) | Modify a Record (6) | Add a New Record (7) | Delete a Record (8) | Exit (9)
+5
+Enter a student's ID to retrieve their record.
+6483
+first name = Tracy               last name = Jones               	student ID = 6483	GPA = 3.16
+Please select an option: 
+Create File (1) | Display File (2) | Build Index (3) | Display Index (4) |Retrieve a Record (5) | Modify a Record (6) | Add a New Record (7) | Delete a Record (8) | Exit (9)
+6
+Enter the first name for the record:
+Jim
+Enter the last name for the record:
+Brods
+Enter the GPA for the record:
+2.68
+Enter a record number to modify it.
+9837
+first name = Jim                 last name = Brods               	student ID = 9837	GPA = 2.68
+Please select an option: 
+Create File (1) | Display File (2) | Build Index (3) | Display Index (4) |Retrieve a Record (5) | Modify a Record (6) | Add a New Record (7) | Delete a Record (8) | Exit (9)
+7
+Enter the first name for the record:
+Harry
+Enter the last name for the record:
+Binkle
+Enter the ID for the record:
+5487
+Enter the GPA for the record:
+2.87
+first name = Harry               last name = Binkle              	student ID = 5487	GPA = 2.87
+Please select an option: 
+Create File (1) | Display File (2) | Build Index (3) | Display Index (4) |Retrieve a Record (5) | Modify a Record (6) | Add a New Record (7) | Delete a Record (8) | Exit (9)
+8
+Enter a student ID number to delete it.
+3641
+0
+Please select an option: 
+Create File (1) | Display File (2) | Build Index (3) | Display Index (4) |Retrieve a Record (5) | Modify a Record (6) | Add a New Record (7) | Delete a Record (8) | Exit (9)
+4
+Do you want to print the full list (1), or the list from an index (2)
+1
+Student Address: 1 Student Key: 2468
+Student Address: 2 Student Key: 1237
+Student Address: 3 Student Key: 1638
+Student Address: 4 Student Key: 1537
+Student Address: 5 Student Key: 4960
+Student Address: 6 Student Key: 3773
+Student Address: 7 Student Key: 9837
+Student Address: 8 Student Key: 8487
+Student Address: 9 Student Key: 6483
+Student Address: 10 Student Key: 5334
+Student Address: 11 Student Key: 5487
+Please select an option: 
+Create File (1) | Display File (2) | Build Index (3) | Display Index (4) |Retrieve a Record (5) | Modify a Record (6) | Add a New Record (7) | Delete a Record (8) | Exit (9)
+2
+first name = DELETED             last name = DELETED             	student ID = 0	GPA = 0.0
+first name = Tony                last name = Samson              	student ID = 2468	GPA = 2.44
+first name = Bill                last name = Shafer              	student ID = 1237	GPA = 2.61
+first name = Sarah               last name = Haggard             	student ID = 1638	GPA = 3.21
+first name = Jerry               last name = Brackston           	student ID = 1537	GPA = 2.95
+What would you like to do: 
+Return to Main Menu (M) | View Next Screen (N) | Display All Students (A)
+
+N
+first name = Carly               last name = Smith               	student ID = 4960	GPA = 4.0
+first name = Jen                 last name = Roberts             	student ID = 3773	GPA = 3.51
+first name = Jim                 last name = Brods               	student ID = 9837	GPA = 2.68
+first name = Phil                last name = Franks              	student ID = 8487	GPA = 1.56
+first name = Tracy               last name = Jones               	student ID = 6483	GPA = 3.16
+first name = Tom                 last name = Jackson             	student ID = 5334	GPA = 2.51
+first name = Harry               last name = Binkle              	student ID = 5487	GPA = 2.87
+What would you like to do: 
+Return to Main Menu (M) | View Next Screen (N) | Display All Students (A)
+
+A
+first name = DELETED             last name = DELETED             	student ID = 0	GPA = 0.0
+first name = Tony                last name = Samson              	student ID = 2468	GPA = 2.44
+first name = Bill                last name = Shafer              	student ID = 1237	GPA = 2.61
+first name = Sarah               last name = Haggard             	student ID = 1638	GPA = 3.21
+first name = Jerry               last name = Brackston           	student ID = 1537	GPA = 2.95
+first name = Carly               last name = Smith               	student ID = 4960	GPA = 4.0
+first name = Jen                 last name = Roberts             	student ID = 3773	GPA = 3.51
+first name = Jim                 last name = Brods               	student ID = 9837	GPA = 2.68
+first name = Phil                last name = Franks              	student ID = 8487	GPA = 1.56
+first name = Tracy               last name = Jones               	student ID = 6483	GPA = 3.16
+first name = Tom                 last name = Jackson             	student ID = 5334	GPA = 2.51
+first name = Harry               last name = Binkle              	student ID = 5487	GPA = 2.87
+What would you like to do: 
+Return to Main Menu (M) | View Next Screen (N) | Display All Students (A)
+
+M
+Please select an option: 
+Create File (1) | Display File (2) | Build Index (3) | Display Index (4) |Retrieve a Record (5) | Modify a Record (6) | Add a New Record (7) | Delete a Record (8) | Exit (9)
+9
