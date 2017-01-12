@@ -1,0 +1,57 @@
+/*
+ * Lucas Burkowski
+ * https://github.com/LucasBurkowski/COSC-311/tree/master/COSC%20311%20HMWRK%201-10
+ * COSC 311
+ * HW 01/11
+ * WINTER 2017
+ */
+public class deleteKth {
+	public static int[] array = {0,2,4,6,1};
+	
+	public static void main(String[] args){
+		LinkedList newList = new LinkedList();
+		for(int i = 0; i < array.length; i++){
+			
+		}
+	}
+	
+	class LinkedList{
+		Node head;
+		
+		public LinkedList(){
+		Node head = null;
+		}
+		
+		public void add(int value){
+			if(head == null){
+				head.data = value;
+			}
+			else{
+				head.next.data = value;
+				head = head.next;
+			}
+			
+		}
+	}
+
+	class Node{
+		Node next;
+		int data;
+		
+		public Node(int value){
+			next = null;
+			data = value;
+		}
+		
+		public Node getNext(){
+			return next;
+		}
+		
+		public void setNext(int value){
+			next.data = value;
+		}
+	}
+}
+
+
+
