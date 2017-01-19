@@ -24,6 +24,9 @@ public class deleteKth {
 			current = current.next;
 			}
 		}
+		System.out.println("List Before removal: ");
+		newList.print();
+		System.out.println();
 		current = newList.head;
 		for(int i = 1; i < K && current != null; i++){
 			current = current.next;
@@ -48,11 +51,12 @@ class LinkedList{
 	}
 	
 	public void print(){
-		while (head.next != null){
-			System.out.print(head.data);
-			head = head.next;
+		Node temp = head;
+		while (temp.next != null){
+			System.out.print(temp.data);
+			temp = temp.next;
 		}
-		System.out.print(head.data);
+		System.out.print(temp.data);
 	}
 }
 

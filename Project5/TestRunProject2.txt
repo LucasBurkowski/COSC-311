@@ -6,11 +6,86 @@ students
 
 Please enter the name of the file you wish to load: 
 students.txt
-first name = Jim                 last name = McRugin             	student ID = 3641	GPA = 3.11
-first name = Tony                last name = Samson              	student ID = 2468	GPA = 2.44
-first name = Bill                last name = Shafer              	student ID = 1237	GPA = 2.61
-first name = Sarah               last name = Haggard             	student ID = 1638	GPA = 3.21
-first name = Jerry               last name = Brackston           	student ID = 1537	GPA = 2.95
+first name = Ben                 last name = Adams               	student ID = 3445	GPA = 3.4
+first name = Joe                 last name = Williams            	student ID = 3004	GPA = 3.6
+first name = Clover              last name = Gojiberry           	student ID = 4567	GPA = 4.0
+first name = Charlie             last name = Applesauce          	student ID = 1234	GPA = 2.7
+first name = William             last name = Faulkner            	student ID = 7777	GPA = 3.2
+What would you like to do: 
+Return to Main Menu (M) | View Next Screen (N) | Display All Students (A)
+
+N
+first name = Binky               last name = Rabbit              	student ID = 4555	GPA = 3.4
+first name = Fyodor              last name = Dostoevsky          	student ID = 2748	GPA = 3.9
+first name = Pierre              last name = Boulle              	student ID = 2999	GPA = 2.9
+first name = Ursula              last name = Anthony             	student ID = 5522	GPA = 3.1
+first name = Julia               last name = May                 	student ID = 4913	GPA = 2.3
+first name = Frederick           last name = Pohl                	student ID = 3396	GPA = 3.0
+first name = Bertrand            last name = Dawkins             	student ID = 1667	GPA = 1.8
+first name = Doris               last name = Huxley              	student ID = 9374	GPA = 2.5
+first name = Diane               last name = Miller              	student ID = 2004	GPA = 4.0
+first name = Robert              last name = Swift               	student ID = 8338	GPA = 2.6
+first name = Benedict            last name = Arnold              	student ID = 7321	GPA = 3.0
+first name = Abraham             last name = Lincoln             	student ID = 1199	GPA = 3.65
+first name = Elmer               last name = Fudd                	student ID = 2336	GPA = 2.22
+first name = Bugs                last name = Bunny               	student ID = 5042	GPA = 3.98
+first name = Daffy               last name = Duck                	student ID = 8267	GPA = 3.125
+first name = Holly               last name = Banks               	student ID = 1359	GPA = 1.34
+first name = Violet              last name = Skye                	student ID = 4227	GPA = 2.76
+first name = James               last name = Cullin              	student ID = 9902	GPA = 1.125
+first name = Hucky               last name = Leopard             	student ID = 3871	GPA = 2.89
+first name = Plato               last name = Foxx                	student ID = 2552	GPA = 3.88
+first name = Steve               last name = Engwenyu            	student ID = 7423	GPA = 3.26
+first name = Lisa                last name = Hayworth            	student ID = 6030	GPA = 3.44
+first name = James               last name = Dean                	student ID = 4198	GPA = 2.33
+first name = Polly               last name = Melville            	student ID = 2409	GPA = 2.83
+first name = George              last name = Putin               	student ID = 6494	GPA = 1.45
+first name = Jenny               last name = McDonald            	student ID = 9634	GPA = 3.42
+first name = Mervin              last name = Putvin              	student ID = 1329	GPA = 3.09
+first name = Peg                 last name = Smith               	student ID = 5964	GPA = 2.56
+first name = Sunny               last name = Charles             	student ID = 8659	GPA = 3.96
+first name = Yucel               last name = Pamuk               	student ID = 4321	GPA = 1.75
+first name = Bill                last name = Rivers              	student ID = 6789	GPA = 3.76
+What would you like to do: 
+Return to Main Menu (M) | View Next Screen (N) | Display All Students (A)
+
+A
+first name = Ben                 last name = Adams               	student ID = 3445	GPA = 3.4
+first name = Joe                 last name = Williams            	student ID = 3004	GPA = 3.6
+first name = Clover              last name = Gojiberry           	student ID = 4567	GPA = 4.0
+first name = Charlie             last name = Applesauce          	student ID = 1234	GPA = 2.7
+first name = William             last name = Faulkner            	student ID = 7777	GPA = 3.2
+first name = Binky               last name = Rabbit              	student ID = 4555	GPA = 3.4
+first name = Fyodor              last name = Dostoevsky          	student ID = 2748	GPA = 3.9
+first name = Pierre              last name = Boulle              	student ID = 2999	GPA = 2.9
+first name = Ursula              last name = Anthony             	student ID = 5522	GPA = 3.1
+first name = Julia               last name = May                 	student ID = 4913	GPA = 2.3
+first name = Frederick           last name = Pohl                	student ID = 3396	GPA = 3.0
+first name = Bertrand            last name = Dawkins             	student ID = 1667	GPA = 1.8
+first name = Doris               last name = Huxley              	student ID = 9374	GPA = 2.5
+first name = Diane               last name = Miller              	student ID = 2004	GPA = 4.0
+first name = Robert              last name = Swift               	student ID = 8338	GPA = 2.6
+first name = Benedict            last name = Arnold              	student ID = 7321	GPA = 3.0
+first name = Abraham             last name = Lincoln             	student ID = 1199	GPA = 3.65
+first name = Elmer               last name = Fudd                	student ID = 2336	GPA = 2.22
+first name = Bugs                last name = Bunny               	student ID = 5042	GPA = 3.98
+first name = Daffy               last name = Duck                	student ID = 8267	GPA = 3.125
+first name = Holly               last name = Banks               	student ID = 1359	GPA = 1.34
+first name = Violet              last name = Skye                	student ID = 4227	GPA = 2.76
+first name = James               last name = Cullin              	student ID = 9902	GPA = 1.125
+first name = Hucky               last name = Leopard             	student ID = 3871	GPA = 2.89
+first name = Plato               last name = Foxx                	student ID = 2552	GPA = 3.88
+first name = Steve               last name = Engwenyu            	student ID = 7423	GPA = 3.26
+first name = Lisa                last name = Hayworth            	student ID = 6030	GPA = 3.44
+first name = James               last name = Dean                	student ID = 4198	GPA = 2.33
+first name = Polly               last name = Melville            	student ID = 2409	GPA = 2.83
+first name = George              last name = Putin               	student ID = 6494	GPA = 1.45
+first name = Jenny               last name = McDonald            	student ID = 9634	GPA = 3.42
+first name = Mervin              last name = Putvin              	student ID = 1329	GPA = 3.09
+first name = Peg                 last name = Smith               	student ID = 5964	GPA = 2.56
+first name = Sunny               last name = Charles             	student ID = 8659	GPA = 3.96
+first name = Yucel               last name = Pamuk               	student ID = 4321	GPA = 1.75
+first name = Bill                last name = Rivers              	student ID = 6789	GPA = 3.76
 What would you like to do: 
 Return to Main Menu (M) | View Next Screen (N) | Display All Students (A)
 
@@ -24,122 +99,59 @@ Index Created!
 Please select an option: 
 Create File (1) | Display File (2) | Build Index (3) | Display Index (4) |Retrieve a Record (5) | Modify a Record (6) | Add a New Record (7) | Delete a Record (8) | Exit (9)
 4
-Do you want to print the full list (1), or the list from an index (2)
-1
-Student Address: 0 Student Key: 3641
-Student Address: 1 Student Key: 2468
-Student Address: 2 Student Key: 1237
-Student Address: 3 Student Key: 1638
-Student Address: 4 Student Key: 1537
-Student Address: 5 Student Key: 4960
-Student Address: 6 Student Key: 3773
-Student Address: 7 Student Key: 9837
-Student Address: 8 Student Key: 8487
-Student Address: 9 Student Key: 6483
-Student Address: 10 Student Key: 5334
-Please select an option: 
-Create File (1) | Display File (2) | Build Index (3) | Display Index (4) |Retrieve a Record (5) | Modify a Record (6) | Add a New Record (7) | Delete a Record (8) | Exit (9)
-4
-Do you want to print the full list (1), or the list from an index (2)
-2
-Enter the starting ID of the index to display: 
-3773
-Student Address: 6 Student Key: 3773
-Student Address: 7 Student Key: 9837
-Student Address: 8 Student Key: 8487
-Student Address: 9 Student Key: 6483
-Student Address: 10 Student Key: 5334
+Enter the number of the the index to start from: 
+0
+Enter the number of the last index to display: 25
+Student Address: 17 Student Key: 2336
+Student Address: 9 Student Key: 4913
+Student Address: 27 Student Key: 4198
+Student Address: 1 Student Key: 3004
+Student Address: 3 Student Key: 1234
+Student Address: 0 Student Key: 3445
+Student Address: 12 Student Key: 9374
+Student Address: 6 Student Key: 2748
+Student Address: 4 Student Key: 7777
+Student Address: 7 Student Key: 2999
+Student Address: 2 Student Key: 4567
+Student Address: 21 Student Key: 4227
+Student Address: 5 Student Key: 4555
+Student Address: 26 Student Key: 6030
 Please select an option: 
 Create File (1) | Display File (2) | Build Index (3) | Display Index (4) |Retrieve a Record (5) | Modify a Record (6) | Add a New Record (7) | Delete a Record (8) | Exit (9)
 5
 Enter a student's ID to retrieve their record.
-6483
-first name = Tracy               last name = Jones               	student ID = 6483	GPA = 3.16
+2336
+first name = Elmer               last name = Fudd                	student ID = 2336	GPA = 2.22
 Please select an option: 
 Create File (1) | Display File (2) | Build Index (3) | Display Index (4) |Retrieve a Record (5) | Modify a Record (6) | Add a New Record (7) | Delete a Record (8) | Exit (9)
 6
 Enter the first name for the record:
-Jim
+John
 Enter the last name for the record:
-Brods
+Roberts
 Enter the GPA for the record:
-2.68
+2.5
 Enter a record number to modify it.
-9837
-first name = Jim                 last name = Brods               	student ID = 9837	GPA = 2.68
+4227
+first name = John                last name = Roberts             	student ID = 4227	GPA = 2.5
 Please select an option: 
 Create File (1) | Display File (2) | Build Index (3) | Display Index (4) |Retrieve a Record (5) | Modify a Record (6) | Add a New Record (7) | Delete a Record (8) | Exit (9)
 7
 Enter the first name for the record:
-Harry
+Jimmy
 Enter the last name for the record:
-Binkle
+Kool
 Enter the ID for the record:
-5487
+6489
 Enter the GPA for the record:
-2.87
-first name = Harry               last name = Binkle              	student ID = 5487	GPA = 2.87
+2.4
+first name = Jimmy               last name = Kool                	student ID = 6489	GPA = 2.4
 Please select an option: 
 Create File (1) | Display File (2) | Build Index (3) | Display Index (4) |Retrieve a Record (5) | Modify a Record (6) | Add a New Record (7) | Delete a Record (8) | Exit (9)
 8
 Enter a student ID number to delete it.
-3641
-0
-Please select an option: 
-Create File (1) | Display File (2) | Build Index (3) | Display Index (4) |Retrieve a Record (5) | Modify a Record (6) | Add a New Record (7) | Delete a Record (8) | Exit (9)
-4
-Do you want to print the full list (1), or the list from an index (2)
-1
-Student Address: 1 Student Key: 2468
-Student Address: 2 Student Key: 1237
-Student Address: 3 Student Key: 1638
-Student Address: 4 Student Key: 1537
-Student Address: 5 Student Key: 4960
-Student Address: 6 Student Key: 3773
-Student Address: 7 Student Key: 9837
-Student Address: 8 Student Key: 8487
-Student Address: 9 Student Key: 6483
-Student Address: 10 Student Key: 5334
-Student Address: 11 Student Key: 5487
-Please select an option: 
-Create File (1) | Display File (2) | Build Index (3) | Display Index (4) |Retrieve a Record (5) | Modify a Record (6) | Add a New Record (7) | Delete a Record (8) | Exit (9)
-2
-first name = DELETED             last name = DELETED             	student ID = 0	GPA = 0.0
-first name = Tony                last name = Samson              	student ID = 2468	GPA = 2.44
-first name = Bill                last name = Shafer              	student ID = 1237	GPA = 2.61
-first name = Sarah               last name = Haggard             	student ID = 1638	GPA = 3.21
-first name = Jerry               last name = Brackston           	student ID = 1537	GPA = 2.95
-What would you like to do: 
-Return to Main Menu (M) | View Next Screen (N) | Display All Students (A)
-
-N
-first name = Carly               last name = Smith               	student ID = 4960	GPA = 4.0
-first name = Jen                 last name = Roberts             	student ID = 3773	GPA = 3.51
-first name = Jim                 last name = Brods               	student ID = 9837	GPA = 2.68
-first name = Phil                last name = Franks              	student ID = 8487	GPA = 1.56
-first name = Tracy               last name = Jones               	student ID = 6483	GPA = 3.16
-first name = Tom                 last name = Jackson             	student ID = 5334	GPA = 2.51
-first name = Harry               last name = Binkle              	student ID = 5487	GPA = 2.87
-What would you like to do: 
-Return to Main Menu (M) | View Next Screen (N) | Display All Students (A)
-
-A
-first name = DELETED             last name = DELETED             	student ID = 0	GPA = 0.0
-first name = Tony                last name = Samson              	student ID = 2468	GPA = 2.44
-first name = Bill                last name = Shafer              	student ID = 1237	GPA = 2.61
-first name = Sarah               last name = Haggard             	student ID = 1638	GPA = 3.21
-first name = Jerry               last name = Brackston           	student ID = 1537	GPA = 2.95
-first name = Carly               last name = Smith               	student ID = 4960	GPA = 4.0
-first name = Jen                 last name = Roberts             	student ID = 3773	GPA = 3.51
-first name = Jim                 last name = Brods               	student ID = 9837	GPA = 2.68
-first name = Phil                last name = Franks              	student ID = 8487	GPA = 1.56
-first name = Tracy               last name = Jones               	student ID = 6483	GPA = 3.16
-first name = Tom                 last name = Jackson             	student ID = 5334	GPA = 2.51
-first name = Harry               last name = Binkle              	student ID = 5487	GPA = 2.87
-What would you like to do: 
-Return to Main Menu (M) | View Next Screen (N) | Display All Students (A)
-
-M
+5964
+8
 Please select an option: 
 Create File (1) | Display File (2) | Build Index (3) | Display Index (4) |Retrieve a Record (5) | Modify a Record (6) | Add a New Record (7) | Delete a Record (8) | Exit (9)
 9
