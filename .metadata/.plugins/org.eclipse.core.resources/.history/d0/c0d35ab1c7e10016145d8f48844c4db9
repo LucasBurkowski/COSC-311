@@ -1,0 +1,46 @@
+
+public class recursivePrint {
+	
+	public static void main(String[] args){
+		
+		Node[] array = {new Node(5, -1),
+						new Node(3,0),
+						new Node(1,6),
+						new Node(2,5),
+						new Node(5,1),
+						new Node(7,0),
+						new Node(9,-1),
+						new Node(2,3)};
+		
+		
+		LinkedList list = new LinkedList(array);
+		list.head = 5;	
+		
+		print(list);
+	}	
+	
+	static void print(LinkedList list){
+		if(list.array.equals(null))
+			return;	
+		System.out.println();
+	}
+}
+
+class Node{
+	int next;
+	int data;
+	
+	public Node(int data, int next){
+		this.next = next;
+		this.data = data;
+	}
+}
+
+class LinkedList{
+	int head;
+	Node[] array;
+	
+	public LinkedList(Node[] array){
+		this.array = array;
+	}
+}
