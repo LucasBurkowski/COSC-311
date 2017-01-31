@@ -1,0 +1,86 @@
+import java.util.Scanner;
+
+/*
+ * Lucas Burkowski
+ * https://github.com/LucasBurkowski/COSC-311/tree/master/COSC%20311%20HMWRK%201-10
+ * COSC 311
+ * HW 01/19
+ * WINTER 2017
+ */
+public class postFix {
+	public void main(String[] Args){
+		System.out.println("3 2 4 + * = " + postFix("3 2 4 + *"));
+		System.out.println("3 2 4 + 5 + * = " + postFix("3 2 4 + 5 + *"));
+		System.out.println("3 2 4 5 + * + = " + postFix("3 2 4 5 + * +"));
+	}
+	
+	static int postFix(String e){
+		Stack<Integer> stack = new Stack<Integer>();
+		Scanner t = new Scanner(e);
+		while(t.hasNext()){
+			if(t.hasNextInt()){
+				stack.push(t.nextInt());
+			}
+			else{
+				int n1 = stack.pop();
+				int n2 = stack.pop();
+				String op = t.next();
+				switch(op){
+				case "+": stack.push(n1 + n2);
+							break;
+				case "-": stack.push(n1 - n2);
+							break;
+				case "*": stack.push(n1 *  n2);
+							break;
+				case "/": stack.push(n1 / n2);
+							break;
+				default: break;
+				}
+			}
+		}
+		return stack.pop();
+	}
+}
+
+class Stack<E>{
+	LinkedList<E> list = new LinkedList(0);
+	void push(E data){
+		list.add(data);
+	}
+	E pop(){
+		return list.remove();
+	}
+	E peek(){
+		return list.head.data;
+	}
+}
+
+class LinkedList<E>{
+	Node<E> head;
+	
+	public LinkedList(E i){
+		head = new Node(i);
+	}
+	
+	public void add(E data){
+		Node<E> newNode = new Node<E>(data);
+		newNode.next = head;
+		head = newNode;
+	}
+	
+	public E remove(){
+		Node<E> lastNode = head;
+		head = head.next;
+		return (E) lastNode.data;
+	}
+}
+
+class Node<E>{
+	Node next;
+	E data;
+	
+	public Node(E value){
+		next = null;
+		data = value;
+	}
+}

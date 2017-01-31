@@ -4,4 +4,6 @@
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="recursivePrint.LinkedList"/>
 <fullyQualifiedTypeName name="Node"/>
+<fullyQualifiedTypeName name="Stack"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
