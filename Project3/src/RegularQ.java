@@ -1,4 +1,4 @@
-
+import java.
 public class RegularQ<E> {
 	private int num = 100;
 	private int front, rear;
